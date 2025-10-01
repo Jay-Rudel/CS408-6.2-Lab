@@ -1,29 +1,28 @@
-# web-dev-starter
-
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+# CS408 - M6.2 Lab
+    TODO:
 
 ## Getting Started
+    To get started, clone this repository, and then you can learn 
+    to view it in the "Viewing" section. Which is below.
 
-To get started, clone this repository and run the following commands:
+## Viewing
+    I highly recommend using VSCode Live Server extention to see the project. This allows you to
+    see the page, and interact with the page without having to open it in a local file.
 
-```bash
-npm install
-```
-This will install the necessary dependencies for the project.
-
-## Development
-
-It is recommended to use the VSCode Live Server extension to run the project
-locally. This will allow you to see changes in real-time as you make them. There
-is no need to run a build process or refresh the page manually. Additionally,
-you do not need to setup a local server to run the project.
-
+    The file that you will be looking at for this project in my github is called "index.html"
+    
 ## Testing
+    There is no tests for this project. As such there is no
+    command to run them.
 
-To run the tests for the project, run the following command:
+## Verification
+    I ran my main "index.html" through the validation 
+    and it showed that there was no errors or warnings to show
 
-```bash
-npm test
-```
+## References / If needed
+
+FIXME:
+    The only source I used for this project was the
+    reading that was provided to us. Just to make sure
+    I could figure out how to do the nav bar. As that was
+    what I had problems coding.
