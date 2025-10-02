@@ -24,7 +24,8 @@ body {
       /* The 0.76 makes it so its not nearly as dark and makes it so its more easily readible*/
     linear-gradient(0deg,rgba(0, 0, 0, 0.76) 1%, rgba(173, 173, 173, 1) 23%, rgba(255, 255, 255, 1) 50%, rgba(173, 173, 173, 1) 77%, rgba(0, 0, 0, .76) 99%),
     white;
-
+  padding: 20px;
+  background-size: 100% auto, 100% auto, 100% auto;
   border-top: 1mm solid red;
   border-bottom: 1mm solid red;
 }
