@@ -1,6 +1,6 @@
 # CS408 - M6.2 Lab
     In this project we are taking files that we have been given and
-    using them to make a letter head file. We are also using 
+    using them to make a letter head file. We are also using
     Lorem Ipsum as placeholder text which is used in a lot
     of a different projects as placeholder text.
 
