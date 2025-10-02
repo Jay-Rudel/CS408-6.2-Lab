@@ -9,13 +9,31 @@ html {
 body {
   margin: 0;
   background: #ccc;
+  min-width: 210mm;
+  min-height: 297mm;
+  max-height: fit-content;
+  max-width: fit-content;
+
+  /* Fall back order here */
+  background: url("/img/top-image.png") top center no-repeat white;
+
+  /* Main backgrounds */
+  background: 
+    url("/img/bottom-image.png") bottom center no-repeat,
+    url("/img/top-image.png") top center no-repeat, 
+      /* The 0.76 makes it so its not nearly as dark and makes it so its more easily readible*/
+    linear-gradient(0deg,rgba(0, 0, 0, 0.76) 1%, rgba(173, 173, 173, 1) 23%, rgba(255, 255, 255, 1) 50%, rgba(173, 173, 173, 1) 77%, rgba(0, 0, 0, .76) 99%),
+    white;
+
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
 }
 
 article {
-  width: 210mm;
-  height: 297mm;
   margin: 20px auto;
   position: relative;
+    flex: 1; /* make both stretch equally */
+  padding: 1rem;
 }
 
 address {
@@ -36,27 +54,7 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
-}
 
-/* Your CSS below here */
-body {
-  /* Fall back order here */
-  background: url("/img/top-image.png") top center no-repeat white;
-
-  /* Main backgrounds */
-  background: 
-    
-    url("/img/bottom-image.png") bottom center no-repeat,
-    url("/img/top-image.png") top center no-repeat, 
-      /* The 0.76 makes it so its not nearly as dark and makes it so its more easily readible*/
-    linear-gradient(0deg,rgba(0, 0, 0, 0.76) 1%, rgba(173, 173, 173, 1) 23%, rgba(255, 255, 255, 1) 50%, rgba(173, 173, 173, 1) 77%, rgba(0, 0, 0, .76) 99%),
-    white;
-
-  border-top: 1mm solid red;
-  border-bottom: 1mm solid red;
-}
-
-h1 {
   /* background img/logo */
   background: url("/img/logo.png") no-repeat center center;
 
@@ -66,4 +64,9 @@ h1 {
   /* Drop Shadow 2 */
   border-radius: 52%; /* Need this for the below shadow */
   box-shadow:2px 8px 12px black;
+}
+
+.articles {
+  display: flex;
+  gap: 2rem; /* space between the articles */
 }
